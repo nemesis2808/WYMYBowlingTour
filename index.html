@@ -179,9 +179,9 @@ const fmtDT=iso=>{try{return new Date(iso).toLocaleString('en-GB',{day:'2-digit'
 
 let isAdmin=false,adminKey='';
 let teams=[],loaded=false,session=null,selGroup=null;
-/* ---------- backend (Supabase) : replaces the old Node server, same behaviour ---------- */
-const SUPABASE_URL='https://YOUR-PROJECT-ID.supabase.co';
-const SUPABASE_KEY='YOUR-ANON-OR-PUBLISHABLE-KEY';
+/* ---------- backend () : replaces the old Node server, same behaviour ---------- */
+const SUPABASE_URL='https://kbtotbqjjnwrchurgpcg.supabase.co';
+const SUPABASE_KEY='sb_publishable_CwtHm13Hs_dJ6FkuVInsDw_yOAeE0cl';
 async function rpc(fn,args){
   const h={'Content-Type':'application/json',apikey:SUPABASE_KEY};
   if(SUPABASE_KEY.startsWith('eyJ'))h.Authorization='Bearer '+SUPABASE_KEY;
